@@ -8,6 +8,22 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Path</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-DLAN.aml</string>
+				<key>Path</key>
+				<string>SSDT-DLAN.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-BATT.aml</string>
 				<key>Path</key>
 				<string>SSDT-BATT.aml</string>
@@ -24,9 +40,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-USBX.aml</string>
 				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -48,29 +64,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PNLF.aml</string>
+				<string>SSDT-PNLF-CFL.aml</string>
 				<key>Path</key>
-				<string>SSDT-PNLF.aml</string>
+				<string>SSDT-PNLF-CFL.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>_OSI XOSI</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Find</key>
-				<data>X09TSQ==</data>
-				<key>Replace</key>
-				<data>WE9TSQ==</data>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>sleep - fix GPRW(0x6d,0x04) instant wake</string>
@@ -82,32 +84,6 @@
 				<data>R1BSVwptCgQ=</data>
 				<key>Replace</key>
 				<data>R1BSVwptCgA=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>sleep - fix auto sleep by setting LIDS to One at the end of RWAK</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>e2AKBGB6YAoCYHBgTElEU4Zc</data>
-				<key>Replace</key>
-				<data>e2AKBGB6YAoCYHABTElEU4Zc</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -151,6 +127,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>_OSI XOSI</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Find</key>
+				<data>X09TSQ==</data>
+				<key>Replace</key>
+				<data>WE9TSQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>battery - _BIF to XBIF (in BAT0)</string>
 				<key>Count</key>
 				<integer>1</integer>
@@ -186,6 +176,32 @@
 				<data>FEQKX0JTVA==</data>
 				<key>Replace</key>
 				<data>FEQKWEJTVA==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>sleep - fix auto sleep by setting LIDS to One at the end of RWAK</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>e2AKBGB6YAoCYHBgTElEU4Zc</data>
+				<key>Replace</key>
+				<data>e2AKBGB6YAoCYHABTElEU4Zc</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -577,6 +593,20 @@
 				<key>BundlePath</key>
 				<string>VoodooI2CSynaptics.kext</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CodecCommander</string>
+				<key>BundlePath</key>
+				<string>CodecCommander.kext</string>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -664,24 +694,24 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
 			<false/>
 			<key>DisableWatchDog</key>
-			<true/>
+			<false/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Security</key>
 		<dict>
