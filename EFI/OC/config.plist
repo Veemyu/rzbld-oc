@@ -808,7 +808,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02902104QXJH4RAD</string>
+			<string>C02ISBADFORENVRMT</string>
 			<key>ROM</key>
 			<data>OLHb4apl</data>
 			<key>SpoofVendor</key>
@@ -816,9 +816,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02Y3AY7JHCC</string>
+			<string>C0ZYFIREPLAC</string>
 			<key>SystemUUID</key>
-			<string>77733CF4-7882-4A48-9FA6-B5FC6C7D7FB5</string>
+			<string>12345678-1234-1234-1234-123456789012</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
